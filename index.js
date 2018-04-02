@@ -12,7 +12,7 @@ require("./services/passport");
 //because we are not exporting passport.js and here we are not saving
 //to some other const we can simple require it like so
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongodb_uri);
 
 const app = express();
 
